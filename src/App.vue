@@ -2,7 +2,8 @@
   <div id="app">
     <!-- <Header title="wewe"/> -->
     <Header/>
-
+    <SectionAward/>
+    <SectionService/>
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -11,11 +12,14 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from "./components/Header.vue"
-
+import SectionAward from "./components/SectionAward.vue"
+import SectionService from "./components/SectionService.vue"
 export default {
   name: 'App',
   components: {
     Header,
+    SectionAward,
+    SectionService
     // HelloWorld
   }
 }

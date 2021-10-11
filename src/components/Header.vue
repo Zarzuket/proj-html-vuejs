@@ -18,7 +18,7 @@
                         <h1>Barber Shop</h1>
                         <hr>
                         <p>The pinnacle of Male Grooving</p>
-                        <button>LEARN MORE</button>
+                        <button class="button_gold">LEARN MORE</button>
                     </div>
                     <div class="col-6">
                         <img src="../assets/img/avadabarbers_hero_focalmirror-600x825.png" alt="">
@@ -33,7 +33,7 @@
 <script>
 export default {
     name: "Header",
-    props: ["title"]
+    // props: ["title"]
 }
 </script>
 
@@ -49,13 +49,6 @@ nav{
         color: white;
         padding: 0 0.8rem;
     }
-}
-button{
-    color: $base_color;
-    font-size: 20px;
-    border: 1px solid $base_color;
-    background-color: transparent;
-    padding: .625rem 2.5rem;
 }
 h1{
     color: white;

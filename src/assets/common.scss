@@ -1,3 +1,16 @@
 // importo bootstrap
 @import "~bootstrap/scss/bootstrap";
 $base_color: #be9359;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,400;0,500;0,700;1,100&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button_gold{
+    color: $base_color;
+    font-size: 20px;
+    border: 1px solid $base_color;
+    background-color: transparent;
+    padding: .625rem 2.5rem;
+}
