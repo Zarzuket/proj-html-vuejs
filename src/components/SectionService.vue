@@ -71,7 +71,7 @@ p{
     letter-spacing: .125rem
 }
 h3{
-    color: #b1b1b1;
+    color: $secondary_color;
     font-size: 5.125rem;
     font-weight: bold;
 }

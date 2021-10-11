@@ -28,7 +28,7 @@ export default {
     background-repeat: repeat;
 }
 h3{
-    color: #b1b1b1;
+    color: $secondary_color;
     font-size: 3.125rem;
     font-weight: bold;
 }
