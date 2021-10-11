@@ -4,6 +4,7 @@
     <Header/>
     <SectionAward/>
     <SectionService/>
+    <Main/>
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -14,12 +15,14 @@
 import Header from "./components/Header.vue"
 import SectionAward from "./components/SectionAward.vue"
 import SectionService from "./components/SectionService.vue"
+import Main from "./components/Main.vue"
 export default {
   name: 'App',
   components: {
     Header,
     SectionAward,
-    SectionService
+    SectionService,
+    Main
     // HelloWorld
   }
 }
