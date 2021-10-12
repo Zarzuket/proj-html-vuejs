@@ -5,6 +5,8 @@
     <SectionAward/>
     <SectionService/>
     <Main/>
+    <SectionReviews/>
+    <RecentBlog/>
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -16,13 +18,17 @@ import Header from "./components/Header.vue"
 import SectionAward from "./components/SectionAward.vue"
 import SectionService from "./components/SectionService.vue"
 import Main from "./components/Main.vue"
+import SectionReviews from "./components/SectionReviews.vue"
+import RecentBlog from "./components/RecentBlog.vue"
 export default {
   name: 'App',
   components: {
     Header,
     SectionAward,
     SectionService,
-    Main
+    Main,
+    SectionReviews,
+    RecentBlog
     // HelloWorld
   }
 }

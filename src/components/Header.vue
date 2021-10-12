@@ -16,7 +16,7 @@
                 <div class="row">
                     <div class="col-6 d-flex flex-column align-items-center justify-content-center">
                         <h1>Barber Shop</h1>
-                        <hr>
+                        <hr size="">
                         <p>The pinnacle of Male Grooving</p>
                         <button class="button_gold">LEARN MORE</button>
                     </div>
@@ -59,7 +59,7 @@ hr{
     color: $base_color;
     width: 15.5rem;
     margin-right:auto;
-    height: 3.25rem;
+    height: .35rem;
     opacity: 1;
 }
 p{
