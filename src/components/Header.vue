@@ -8,8 +8,8 @@
                       <img src="../assets/img/avadabarbers-logo-x2-200x70.png" alt="">
                   </div>
                   <div>
-                      <i class="fas fa-shopping-cart"></i>
-                      <i class="fas fa-bars"></i>
+                      <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                      <a href="#"><i class="fas fa-bars"></i></a>
                   </div>
               </nav>
             <div class="container">

@@ -30,10 +30,12 @@
           </div>
           <div class="row">
             <div class="col-12 text-center mt-3">
+              <a href="#">
               <i class="fab fa-facebook-f"></i>
               <i class="fab fa-twitter"></i>
               <i class="fab fa-youtube"></i>
               <i class="fab fa-instagram-square"></i>
+              </a>
             </div>
           </div>
         </div>

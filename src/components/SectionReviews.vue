@@ -3,7 +3,7 @@
     <div class="container absolute">
       <div class="row text-center">
         <div class="col-5 px-0">
-          <img src="../assets/img/avadabarbers-cta-background.jpg" alt="">
+          <img src="../assets/img/shaving_butter-200x200.png" alt="">
         </div>
         <div class="col-7 d-flex flex-column text-center align-item-center justify-content-center">
           <h5>THIS MONTHS FEATURED PRODUCT</h5>
@@ -20,28 +20,39 @@
         </div>
     </div>
     <div class="container d-flex">
-      <div class="col-4 text-center">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit dolores delectus. Esse ea tempora ipsam, molestias consectetur qui? Ea, nemo? Dolorum ea blanditiis aliquid tempore necessitatibus eveniet ipsa architecto.</p>
-        <img class="img_reviews" src="../assets/img/avadabarbers-trimcut-gallery6-200x200.jpg" alt="John Doe">
-        <h5>John Doe</h5>
-      </div>
-      <div class="col-4 text-center">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit dolores delectus. Esse ea tempora ipsam, molestias consectetur qui? Ea, nemo? Dolorum ea blanditiis aliquid tempore necessitatibus eveniet ipsa architecto.</p>
-        <img class="img_reviews" src="../assets/img/avadabarbers-trimcut-gallery7-200x201.jpg" alt="Pete Jones">
-        <h5>Pete Jones</h5>
-      </div>
-      <div class="col-4 text-center">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit dolores delectus. Esse ea tempora ipsam, molestias consectetur qui? Ea, nemo? Dolorum ea blanditiis aliquid tempore necessitatibus eveniet ipsa architecto.</p>
-        <img class="img_reviews" src="../assets/img/avadabarbers-trimcut-gallery3-200x201.jpg" alt="Mark Wilson">
-        <h5>Mark Wilson</h5>
-      </div>
+      <Card v-for="(author, index) in authors" :key="index" :xxx="author"/>
     </div>
   </div>
 </template>
 
 <script>
+import Card from "./Card.vue"
 export default {
-name: "SectionReviews"
+name: "SectionReviews",
+components:{
+  Card
+},
+data(){
+  return{
+    authors:[
+      {
+        p:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit dolores delectus. Esse ea tempora ipsam, molestias consectetur qui?",
+        img:require("../assets/img/avadabarbers-trimcut-gallery6-200x200.jpg"),
+        name:"John Doe"
+      },
+      {
+        p:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit dolores delectus. Esse ea tempora ipsam, molestias consectetur qui?",
+        img:require("../assets/img/avadabarbers-trimcut-gallery7-200x201.jpg"),
+        name:"Pete Jones"
+      },
+      {
+        p:"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi sit dolores delectus. Esse ea tempora ipsam, molestias consectetur qui?",
+        img:require("../assets/img/avadabarbers-trimcut-gallery3-200x201.jpg"),
+        name:"Mark Wilson"
+      },
+    ]
+  }
+}
 }
 </script>
 
@@ -49,6 +60,9 @@ name: "SectionReviews"
 @import "../assets/common.scss";
 .container-fluid{
   margin-top: 30.125rem;
+  position: relative;
+}
+.relative{
   position: relative;
 }
 .absolute {
@@ -101,19 +115,6 @@ h3{
   font-size: 5.125rem;
   font-weight: bold;
 }
-.img_reviews{
-  border-radius: 50%;
-  width: 30%;
-  padding: 1.25rem 0rem;
-}
-.col-4{
-  p{
-    padding: 0rem 5.25rem;
-    color: grey;
-  }
-  h5{
-    color: $base_color;
-  }
-}
+
 
 </style>
