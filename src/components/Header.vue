@@ -41,6 +41,7 @@ export default {
 @import "../assets/common.scss";
 .container-fluid{
     background-image: url(../assets/img/avadabarbers-hero-bg.jpg);
+    padding: 1.25rem;
 }
 
 

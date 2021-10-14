@@ -7,6 +7,7 @@
     <Main/>
     <SectionReviews/>
     <RecentBlog/>
+    <Footer/>
     <!-- <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
@@ -20,6 +21,7 @@ import SectionService from "./components/SectionService.vue"
 import Main from "./components/Main.vue"
 import SectionReviews from "./components/SectionReviews.vue"
 import RecentBlog from "./components/RecentBlog.vue"
+import Footer from "./components/Footer.vue"
 export default {
   name: 'App',
   components: {
@@ -28,7 +30,8 @@ export default {
     SectionService,
     Main,
     SectionReviews,
-    RecentBlog
+    RecentBlog,
+    Footer
     // HelloWorld
   }
 }

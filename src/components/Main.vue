@@ -66,4 +66,7 @@ h2{
 h4{
   color: $base_color;
 }
+button{
+margin-bottom: 12.5rem;
+}
 </style>

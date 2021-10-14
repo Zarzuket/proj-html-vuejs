@@ -13,8 +13,8 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!</p>
           </div>
           <div class="col-4 text-center">
-            <img src="../assets/img/avadabarbers-choosing-blog-320x202.jpg" alt="AvadaBarbers Chair">
-            <h4>Choosing The Right Barber</h4>
+            <img src="../assets/img/avadabarbers-choosing-blog-320x202.jpg"  alt="AvadaBarbers Chair">
+            <h4> <a href="">Choosing The Right Barber</a>  </h4>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!</p>  
           </div>
           <div class="col-4 text-center">
@@ -40,7 +40,7 @@ export default {
 <style lang="scss" scoped>
 @import "../assets/common.scss";
 .container-fluid{
-    margin-top: 14rem;
+    margin: 14rem 0rem;
 }
 .col-12{
     p{
