@@ -53,7 +53,7 @@
 
 <script>
 export default {
-    name: "SectionService"
+    name: "SectionServices"
 }
 </script>
 

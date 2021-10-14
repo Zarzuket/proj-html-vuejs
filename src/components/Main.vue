@@ -11,26 +11,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-3 text-center">
-          <img src="../assets/img/brush_dark-400x400.png" alt="">
-          <h4>Brush</h4>
-          <p>$15.00</p>
-        </div>
-        <div class="col-3 text-center">
-          <img src="../assets/img/scissors-400x400.png" alt="">
-          <h4>Scissors</h4>
-          <p>$85.00</p>
-        </div>
-        <div class="col-3 text-center">
-          <img src="../assets/img/hot_oil_dark-400x400.png" alt="">
-          <h4>Hot Oil</h4>
-          <p>$15.00</p>
-        </div>
-        <div class="col-3 text-center">
-          <img src="../assets/img/straight_razor_dark-400x400.png" alt="">
-          <h4>Straight Razor</h4>
-          <p>$30.00</p>
-        </div>
+        <Product v-for="(prod,index) in products" :key="index" :prod="prod"/>
       </div>
       <div class="row">
         <div class="col-12 text-center">
@@ -41,8 +22,38 @@
 </template>
 
 <script>
+import Product from "./Product.vue"
 export default {
-
+  name:"Main",
+  components:{
+     Product,
+  },
+  data(){
+    return{
+      products:[
+        {
+          img:require("../assets/img/brush_dark-400x400.png"),
+          title:"Brush",
+          price:"$15.00"
+        },
+        {
+          img:require("../assets/img/scissors-400x400.png"),
+          title:"Scissors",
+          price:"$85.00"
+        },
+        {
+          img:require("../assets/img/hot_oil_dark-400x400.png"),
+          title:"Hot Oil",
+          price:"$15.00"
+        },
+        {
+          img:require("../assets/img/straight_razor_dark-400x400.png"),
+          title:"Straight Razor",
+          price:"$30.00"
+        }
+      ]
+    }
+  }
 }
 </script>
 

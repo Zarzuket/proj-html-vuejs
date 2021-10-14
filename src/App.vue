@@ -3,7 +3,7 @@
     <!-- <Header title="wewe"/> -->
     <Header/>
     <SectionAward/>
-    <SectionService/>
+    <SectionServices/>
     <Main/>
     <SectionReviews/>
     <RecentBlog/>
@@ -17,7 +17,7 @@
 // import HelloWorld from './components/HelloWorld.vue'
 import Header from "./components/Header.vue"
 import SectionAward from "./components/SectionAward.vue"
-import SectionService from "./components/SectionService.vue"
+import SectionServices from "./components/SectionServices.vue"
 import Main from "./components/Main.vue"
 import SectionReviews from "./components/SectionReviews.vue"
 import RecentBlog from "./components/RecentBlog.vue"
@@ -27,11 +27,11 @@ export default {
   components: {
     Header,
     SectionAward,
-    SectionService,
+    SectionServices,
     Main,
     SectionReviews,
     RecentBlog,
-    Footer
+    Footer,
     // HelloWorld
   }
 }

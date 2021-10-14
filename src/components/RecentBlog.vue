@@ -7,21 +7,7 @@
           </div>
       </div>
       <div class="container d-flex">
-          <div class="col-4 text-center">
-            <img src="../assets/img/avadabarbers-second-blog-320x202.jpg" alt="Avada Barbers Shop">
-            <h4>Avada Barbers Now Open</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!</p>
-          </div>
-          <div class="col-4 text-center">
-            <img src="../assets/img/avadabarbers-choosing-blog-320x202.jpg"  alt="AvadaBarbers Chair">
-            <h4> <a href="">Choosing The Right Barber</a>  </h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!</p>  
-          </div>
-          <div class="col-4 text-center">
-            <img src="../assets/img/avadabarbers-ourservice-blog-320x202.jpg" alt="Avada Barbers at Work">
-            <h4>Qick Service Guide</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!</p>
-          </div>
+          <Post v-for="(blog,index) in blog" :key="index" :info="blog"/>
       </div>
       <div class="row mt-5">
           <div class="col-12 text-center">
@@ -32,8 +18,33 @@
 </template>
 
 <script>
+import Post from "./Post.vue"
 export default {
-    name: "RecentBlog"
+    name: "RecentBlog",
+    components:{
+        Post,
+    },
+    data(){
+        return{
+            blog:[
+                {
+                    img:require("../assets/img/avadabarbers-second-blog-320x202.jpg"),
+                    title:"Avada Barbers Now Open",
+                    post:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!"
+                },
+                {
+                    img:require("../assets/img/avadabarbers-choosing-blog-320x202.jpg"),
+                    title:"Choosing The Right Barber",
+                    post:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!"
+                },
+                {
+                    img:require("../assets/img/avadabarbers-ourservice-blog-320x202.jpg"),
+                    title:"Qick Service Guide",
+                    post:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque mollitia fugit quos aliquid quia, ipsa quis, quod odit reprehenderit nesciunt quam harum voluptas magni rem perferendis delectus porro ad praesentium!"
+                },
+            ]
+        }
+    }
 }
 </script>
 
